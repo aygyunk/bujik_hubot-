@@ -4,13 +4,6 @@ var Y_U_NO_IMAGE_URL = 'https://i.ytimg.com/vi/9S9vP2inD_U/maxresdefault.jpg';
 var bujik = function(robot) {
 
   /**
-   * Listen for a /bark command and then bark at the user.
-   */
-  robot.hear(/\/bark/, function(response) {
-    response.send(`Bujik barks at ${response.envelope.user.name}`);
-  });
-
-  /**
    * Listen for 'get me a coffee' and send a funny response
    */
   robot.hear(/get me a coffee/, function(response) {
@@ -49,7 +42,14 @@ var bujik = function(robot) {
     }
   });
 
-  robot.hear(/\/random/, function(response) {
+  /**
+   * Listen for a /bark command and then bark at the user.
+   */
+  robot.hear(/\/\/bark/, function(response) {
+    response.send(`Bujik barks at ${response.envelope.user.name}`);
+  });
+
+  robot.hear(/\/\/random/, function(response) {
     var phrases = [
       'hotogs are delicious',
       'nachos are weird',

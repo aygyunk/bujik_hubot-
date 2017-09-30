@@ -3,12 +3,12 @@
 Bujik is a chat bot built on the Hubot framework.
 
 ## Commands
-Bujik supports the following Slack Commands
+Bujik supports the following Slack '//' Commands.
 
-#### /bark
+#### //bark
 Bujik will bark at the user
 
-#### /random
+#### //random
 Boo!
 
 ## Phrases
