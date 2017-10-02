@@ -46,7 +46,7 @@ var bujik = function(robot) {
       case "cake": {
         return response.reply("Milk, Eggs, Flour, and Sugar... baby");
       }
-      case "sandwhich": {
+      case "sandwich": {
         return response.reply("At least two slices of bread and whatever you're feeling man.");
       }
       default: {
