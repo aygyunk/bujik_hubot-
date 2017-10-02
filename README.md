@@ -13,7 +13,7 @@ Boo!
 
 ## Phrases
 
-Bujik will automatically respond to some phrases sent by any user.
+Bujik will automatically respond to some phrases sent by any user when being mentioned.
 
 #### get me a coffee
 Bujik doesn't get coffee.
