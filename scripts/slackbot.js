@@ -36,7 +36,7 @@ var bujik = function(robot) {
    * Listen for '@<robot> what are the ingredients for a <pizza|cake|sandwich>?'
    * and responding based on the provided option.
    */
-  robot.respond(/what are the ingredients for a (.*)?/, function(response) {
+  robot.respond(/what are the ingredients for a (.*)\?/, function(response) {
     var favorite = response.match[1];
 
     switch (favorite) {
